@@ -4,12 +4,16 @@
 
 根据访问 URL 的不同，wordpress 会使用主题文件夹中的不同文件控制页面显示的模板
 
+- header.php
+- footer.php
 - single.php : `文章 / posts`。点击 `the_permalink()` 跳转文章，以该文件作为模板；不存在时，fallback 为默认模板
 - page.php : `页面 / pages` 。
 
 ## wordpress 内置函数
 
 - bloginfo() : 提供网站的各种信息
+- get_header() : 给当前模板注入 `header.php`
+- get_footer() : 给当前模板注入 `footer.php`
 
 ### posts
 
