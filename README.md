@@ -16,6 +16,7 @@
 - add_action : 注册自定义 action 
 - wp_enqueue_style : 加载 css 文件
 - get_stylesheet_uri : 获取 `style.css` 资源路径
+- get_theme_file_uri : 获取自定义 css 文件路径，会添加相当于当前项目的静态资源路径
 
 ### header
 
