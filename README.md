@@ -19,6 +19,10 @@
 - get_theme_file_uri : 获取自定义 css 文件路径，会添加相当于当前项目的静态资源路径
 - add_theme_support : 主题支持
 - site_url : 当前网站根 URL
+- get_the_ID : 获取当前页面的 id
+- wp_get_post_parent_id : 返回输入的页面 id 的父页面 id
+- get_the_title : 获取指定 id 页面的标题
+- get_permalink : 获取指定 id 页面的链接
 
 ### header
 
