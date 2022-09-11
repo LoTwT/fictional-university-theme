@@ -11,6 +11,13 @@
     wp_enqueue_style("university_extra_style", get_theme_file_uri('/build/index.css'));
   }
 
-  add_action("wp_enqueue_scripts", "load_css")
+  add_action("wp_enqueue_scripts", "load_css");
+
+  // 每个页面自动生成标题
+  function university_features() {
+    add_theme_support("title-tag");
+  }
+
+  add_action("after_setup_theme", "university_features");
 
 ?>
