@@ -1,5 +1,10 @@
 # fictional-university-theme
 
+- <https://codex.wordpress.org>
+- <https://developer.wordpress.org>
+
+- wordpress 主题开发文档：<https://developer.wordpress.org/themes/getting-started/>
+
 ## 特殊模板文件
 
 根据访问 URL 的不同，wordpress 会使用主题文件夹中的不同文件控制页面显示的模板
@@ -11,6 +16,8 @@
 - functions.php : 和 wordpress 内置功能、函数进行交互
 
 ## wordpress 内置函数
+
+get 开头的函数返回对应结果；the 开头的函数会进行输出 ( echo ) 。
 
 - bloginfo : 提供网站的各种信息
 - add_action : 注册自定义 action 
