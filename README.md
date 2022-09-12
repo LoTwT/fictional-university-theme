@@ -34,6 +34,8 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - get_pages
 - language_attributes : 在 HTML 标签上设置当前浏览器所用语言
 - body_class : 给 `<body>` 加上当前页面对应的特殊的 class 名
+- register_nav_menu : 注册动态导航栏
+- wp_nav_menu : 动态导航栏占位
 
 ### header
 

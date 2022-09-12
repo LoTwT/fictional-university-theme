@@ -13,8 +13,14 @@
 
   add_action("wp_enqueue_scripts", "load_css");
 
-  // 每个页面自动生成标题
   function university_features() {
+    // 注册动态导航栏 ( 第二个参数显示在控制台中 )
+    register_nav_menu("headerMenuLocation", "Header Menu Location");
+    // 也可以用作底部动态导航
+    register_nav_menu("footerLocationOne", "Footer Location One");
+    register_nav_menu("footerLocationTwo", "Footer Location Two");
+
+    // 每个页面自动生成标题
     add_theme_support("title-tag");
   }
 
