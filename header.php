@@ -16,7 +16,7 @@
         <div class="site-header__menu group">
           <nav class="main-navigation">
             <!-- <ul>
-              <li><a href="<?php echo site_url('?page_id=39'); ?>">About Us</a></li>
+              <li <?php if (is_page("?page_id=39") or wp_get_post_parent_id(0) == 39) echo 'class="current-menu-item"' ; ?>><a href="<?php echo site_url('?page_id=39'); ?>">About Us</a></li>
               <li><a href="#">Programs</a></li>
               <li><a href="#">Events</a></li>
               <li><a href="#">Campuses</a></li>

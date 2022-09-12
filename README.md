@@ -27,7 +27,7 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - add_theme_support : 主题支持
 - site_url : 当前网站根 URL
 - get_the_ID : 获取当前页面的 id
-- wp_get_post_parent_id : 返回输入的页面 id 的父页面 id
+- wp_get_post_parent_id : 返回输入的页面 id 的父页面 id ( 参数给 0 时，默认查找当前页面的父页面 )
 - get_the_title : 获取指定 id 页面的标题
 - get_permalink : 获取指定 id 页面的链接
 - wp_list_pages
@@ -36,6 +36,7 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - body_class : 给 `<body>` 加上当前页面对应的特殊的 class 名
 - register_nav_menu : 注册动态导航栏
 - wp_nav_menu : 动态导航栏占位
+- is_page : 是不是某一个指定页面
 
 ### header
 
