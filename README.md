@@ -30,6 +30,8 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - wp_get_post_parent_id : 返回输入的页面 id 的父页面 id
 - get_the_title : 获取指定 id 页面的标题
 - get_permalink : 获取指定 id 页面的链接
+- wp_list_pages
+- get_pages
 
 ### header
 
