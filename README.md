@@ -15,6 +15,7 @@
 - page.php : `页面 / pages` 。
 - functions.php : 和 wordpress 内置功能、函数进行交互
 - front-page.php : 自定义首页 ( 替代 index.php )
+- archive.php : 展示通过类别筛选后的归档页
 
 ## wordpress 内置函数
 
@@ -38,6 +39,11 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - register_nav_menu : 注册动态导航栏
 - wp_nav_menu : 动态导航栏占位
 - is_page : 是不是某一个指定页面
+- is_category : 归档页，是类别
+- single_cat_title : 显示当前类别名称
+- is_author : 归档页，是作者
+- the_archive_title : 归档页标题
+- the_archive_description : 归档页描述 ( 需对应设置，如作者设置个人说明 )
 
 ### header
 
@@ -56,5 +62,6 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - the_content : 当前文章内容
 - the_permalink : 当前文章链接
 - the_excerpt : 当前文章摘要
-- the_author_posts_link : 文章作者
+- the_author
+- the_author_posts_link
 - get_the_category_list : 文章类别
