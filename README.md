@@ -44,6 +44,9 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - is_author : 归档页，是作者
 - the_archive_title : 归档页标题
 - the_archive_description : 归档页描述 ( 需对应设置，如作者设置个人说明 )
+- the_time : 获取文章的时间 ( 通过参数控制需要的年月日及其格式 )
+- wp_trim_words : 裁剪文章内容，可用作摘要
+- wp_reset_postdata : 重置自定义查询数据，让 wordpress 重新按默认行为工作
 
 ### header
 
