@@ -31,6 +31,10 @@
         </div>
       </div>
     <?php }
+
+    // 分页
+    echo paginate_links();
+
   ?>
 </div>
 
