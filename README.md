@@ -5,6 +5,36 @@
 
 - wordpress 主题开发文档：<https://developer.wordpress.org/themes/getting-started/>
 
+- wordpress dashicons：<https://developer.wordpress.org/resource/dashicons>
+
+## 特殊文件夹
+
+`wp-content/mu-plugins` 强制启用的插件存放目录
+
+```php
+// wp-content/muplugins/university-post-types.php
+// 注册文章类型 event
+<?php
+  // 自定义 posts 类型
+  function university_post_types() {
+    register_post_type("event", array(
+      "public" => true,
+      'show_in_rest' => true,
+      "labels" => array(
+        "name" => "Events",
+        "add_new_item" => "Add New Event",
+        "edit_item" => "Edit Event",
+        "all_items" => "All Events",
+        "singular_name" => "Event"
+      ),
+      "menu_icon" => "dashicons-calendar",
+    ));
+  }
+
+  add_action("init", "university_post_types");
+?>
+```
+
 ## 特殊模板文件
 
 根据访问 URL 的不同，wordpress 会使用主题文件夹中的不同文件控制页面显示的模板
