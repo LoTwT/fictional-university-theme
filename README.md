@@ -46,6 +46,8 @@
 - functions.php : 和 wordpress 内置功能、函数进行交互
 - front-page.php : 自定义首页 ( 替代 index.php )
 - archive.php : 展示通过类别筛选后的归档页
+- single-xxx.php : 新建文章类型后，使用 `single-新文章类型.php` 作为模板
+- archive-xxx.php : 归档页，使用 `archive-新文章类型.php` 作为模板
 
 ## wordpress 内置函数
 
@@ -78,6 +80,7 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - wp_trim_words : 裁剪文章内容，可用作摘要
 - wp_reset_postdata : 重置自定义查询数据，让 wordpress 重新按默认行为工作
 - get_post_type
+- get_post_type_archive_link : 获取指定文章类型的归档链接
 
 ### header
 
