@@ -18,6 +18,9 @@
   // 自定义 posts 类型
   function university_post_types() {
     register_post_type("event", array(
+      "supports" => array("title", "editor", "excerpt"),
+      "rewrite" => array("slug" => "events"),
+      "has_archive" => true, // 归档 URL
       "public" => true,
       'show_in_rest' => true,
       "labels" => array(
@@ -98,7 +101,9 @@ get 开头的函数返回对应结果；the 开头的函数会进行输出 ( ech
 - the_title : 当前文章标题
 - the_content : 当前文章内容
 - the_permalink : 当前文章链接
+- has_excerpt : 当前文章是否手动设置了摘要
 - the_excerpt : 当前文章摘要
+- get_the_excerpt
 - the_author
 - the_author_posts_link
 - get_the_category_list : 文章类别
